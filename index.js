@@ -11,8 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    // res.sendFile(`${__dirname}/index.html`);
-    res.send("Video Upload")
+    res.send("Welcome To File Upload Api on Google Drive")
 });
 
 const KEYFILEPATH = path.join(__dirname, "cred.json");
