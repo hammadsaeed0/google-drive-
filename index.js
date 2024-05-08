@@ -74,6 +74,6 @@ app.post("/upload", upload.any(), async (req, res) => {
     }
 });
 
-app.listen(5050, () => {
-    console.log('Form running on port 5050');
+app.listen(3000, () => {
+    console.log('Form running on port 3000');
 });
