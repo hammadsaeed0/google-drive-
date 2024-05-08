@@ -11,7 +11,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.sendFile(`${__dirname}/index.html`);
+    // res.sendFile(`${__dirname}/index.html`);
+    res.send("Video Upload")
 });
 
 const KEYFILEPATH = path.join(__dirname, "cred.json");
