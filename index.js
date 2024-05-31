@@ -10,7 +10,7 @@ const upload = multer();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
+app.get('/user', (req, res) => {
     res.send("Welcome To File Upload Api on Google Drive")
 });
 
